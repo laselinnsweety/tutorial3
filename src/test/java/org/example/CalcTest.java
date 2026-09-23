@@ -1,4 +1,4 @@
-package org.example;
+ppackage org.example;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
@@ -6,12 +6,12 @@ import static org.junit.Assert.assertEquals;
 public class CalcTest {
 
     @Test
-    public void testAdd() {
+    public void testAddition() {
         Calc calc = new Calc();
         assertEquals(5, calc.add(2,3));
     }
 
-    // 新增减法测试（这个会失败！）
+    // 新增减法测试，现在Calc还没有subtract方法，这个测试会失败
     @Test
     public void testSubtraction(){
         Calc c = new Calc();
