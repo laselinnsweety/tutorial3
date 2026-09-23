@@ -1,17 +1,15 @@
-ppackage org.example;
+package org.example;
 
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CalcTest {
-
     @Test
     public void testAddition() {
         Calc calc = new Calc();
         assertEquals(5, calc.add(2,3));
     }
 
-    // 新增减法测试，现在Calc还没有subtract方法，这个测试会失败
     @Test
     public void testSubtraction(){
         Calc c = new Calc();
